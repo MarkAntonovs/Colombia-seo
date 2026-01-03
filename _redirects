@@ -1,0 +1,36 @@
+# Netlify Redirects - Clean URL routing
+# Format: from  to  status
+
+# Homepage
+/   /index.html   200
+
+# Content pages - clean URL rewrites (both /slug and /slug.html work)
+/alternativas-prestamos-online   /alternativas-prestamos-online.html   200
+/consultar-historial-crediticio-gratis   /consultar-historial-crediticio-gratis.html   200
+/contacto   /contacto.html   200
+/costos-ocultos-creditos-online   /costos-ocultos-creditos-online.html   200
+/credito-online-vs-banco   /credito-online-vs-banco.html   200
+/credito-sin-cuenta-bancaria-colombia   /credito-sin-cuenta-bancaria-colombia.html   200
+/credito-sin-historial-crediticio   /credito-sin-historial-crediticio.html   200
+/creditos-online-colombia   /creditos-online-colombia.html   200
+/derechos-consumidor-financiero-colombia   /derechos-consumidor-financiero-colombia.html   200
+/estafas-prestamos-online-colombia   /estafas-prestamos-online-colombia.html   200
+/no-puedo-pagar-prestamo-que-hacer   /no-puedo-pagar-prestamo-que-hacer.html   200
+/peligros-gota-gota-colombia   /peligros-gota-gota-colombia.html   200
+/politica-privacidad   /politica-privacidad.html   200
+/prestamo-reportado-datacredito   /prestamo-reportado-datacredito.html   200
+/prestamo-solo-con-cedula-colombia   /prestamo-solo-con-cedula-colombia.html   200
+/prestamos-inmediatos-en-linea   /prestamos-inmediatos-en-linea.html   200
+/prestamos-para-independientes-colombia   /prestamos-para-independientes-colombia.html   200
+/prestamos-para-pensionados-colombia   /prestamos-para-pensionados-colombia.html   200
+/prestamos-pequenos-montos-colombia   /prestamos-pequenos-montos-colombia.html   200
+/que-es-estudio-de-credito   /que-es-estudio-de-credito.html   200
+/requisitos-credito-online-colombia   /requisitos-credito-online-colombia.html   200
+/simulador-credito-como-funciona   /simulador-credito-como-funciona.html   200
+/tasa-de-usura-colombia   /tasa-de-usura-colombia.html   200
+/tasas-interes-prestamos-online   /tasas-interes-prestamos-online.html   200
+/terminos   /terminos.html   200
+/verificar-empresa-prestamos-legitima   /verificar-empresa-prestamos-legitima.html   200
+
+# 404 fallback
+/*   /404.html   404
