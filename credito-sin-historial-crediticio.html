@@ -28,9 +28,15 @@
 
     <header class="site-header">
         <div class="container">
+            <a class="site-name" href="index.html">Crédito Colombia</a>
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="site-nav" aria-label="Navegación principal">
-                <a class="site-name" href="index.html">Crédito Colombia</a>
                 <a class="nav__link" href="creditos-online-colombia.html">Guía Completa</a>
+                <a class="nav__link" href="ofertas-creditos.html">Ofertas</a>
                 <a class="nav__link" href="contacto.html">Contacto</a>
             </nav>
         </div>
@@ -247,5 +253,8 @@
             <p><small>Todos los derechos reservados.</small></p>
         </div>
     </footer>
+<script>
+(function(){var t=document.querySelector('.nav-toggle'),n=document.querySelector('.site-nav'),o=document.body;if(!t||!n)return;t.addEventListener('click',function(){var e=n.classList.toggle('nav-open');t.classList.toggle('active');t.setAttribute('aria-expanded',e);t.setAttribute('aria-label',e?'Cerrar menú':'Abrir menú');o.style.overflow=e?'hidden':''});n.querySelectorAll('.nav__link').forEach(function(e){e.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('active');t.setAttribute('aria-expanded','false');o.style.overflow=''})});n.addEventListener('click',function(e){if(e.target===n){n.classList.remove('nav-open');t.classList.remove('active');t.setAttribute('aria-expanded','false');o.style.overflow=''}})})();
+</script>
 </body>
 </html>

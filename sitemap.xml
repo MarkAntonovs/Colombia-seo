@@ -11,9 +11,17 @@
   <!-- Homepage -->
   <url>
     <loc>https://creditocolombia.co/</loc>
-    <lastmod>2026-01-03</lastmod>
+    <lastmod>2026-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- Offers Page - High Priority for Monetization -->
+  <url>
+    <loc>https://creditocolombia.co/ofertas-creditos</loc>
+    <lastmod>2026-01-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- Cluster Pages - Requisitos y documentos -->
