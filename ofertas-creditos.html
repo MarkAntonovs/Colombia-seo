@@ -7,12 +7,16 @@
   <meta name="description" content="Compara las mejores ofertas de créditos online en Colombia: montos, tasas, requisitos y tiempos de aprobación. Encuentra el préstamo ideal para ti de forma segura y confiable.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://creditocolombia.co/ofertas-creditos.html">
+  <link rel="alternate" hreflang="es" href="https://creditocolombia.co/ofertas-creditos.html">
+  <link rel="alternate" hreflang="en" href="https://creditocolombia.co/en/loan-offers.html">
+  <link rel="alternate" hreflang="x-default" href="https://creditocolombia.co/ofertas-creditos.html">
   <meta property="og:site_name" content="Crédito Colombia" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Ofertas de Créditos Online en Colombia — Comparador 2026" />
   <meta property="og:description" content="Compara las mejores ofertas de créditos online en Colombia: montos, tasas, requisitos y tiempos de aprobación. Encuentra el préstamo ideal para ti de forma segura y confiable." />
-  <meta property="og:url" content="https://creditocolombia.co/ofertas-creditos.html" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://creditocolombia.co/ofertas-creditos.html" />    <meta property="og:image" content="https://creditocolombia.co/crezu.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Ofertas de Créditos Online en Colombia — Comparador 2026" />
   <meta name="twitter:description" content="Compara las mejores ofertas de créditos online en Colombia: montos, tasas, requisitos y tiempos de aprobación. Encuentra el préstamo ideal para ti de forma segura y confiable." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -27,6 +31,11 @@
   <header class="site-header">
     <div class="container">
       <a class="site-name" href="index.html">Crédito Colombia</a>
+      <div class="lang-switcher">
+        <a href="ofertas-creditos.html" class="lang-link lang-link--active" aria-current="page">ES</a>
+        <span class="lang-separator">|</span>
+        <a href="en/loan-offers.html" class="lang-link">EN</a>
+      </div>
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
         <span></span>
@@ -53,8 +62,57 @@
           <li>Haz clic en “Solicitar” para ir al sitio oficial del prestamista (con UTM-метками для аналитики).</li>
           <li>No solicitamos datos personales ни intermediamos en el proceso.</li>
         </ul>
+      </section>      
+      <section class="calculator-widget" aria-labelledby="calculator-heading">
+        <h2 id="calculator-heading">Calcula tu cuota mensual</h2>
+        <p class="calculator-description">Usa el simulador para calcular tu cuota mensual antes de elegir una oferta</p>
+        
+        <div class="calculator-grid">
+          <div class="calculator-inputs">
+            <div class="input-group">
+              <label for="loan-amount">
+                <span class="input-label">Monto del préstamo</span>
+                <span class="input-value" id="amount-display">$1.000.000</span>
+              </label>
+              <input type="range" id="loan-amount" min="100000" max="10000000" step="100000" value="1000000" aria-describedby="amount-display">
+            </div>
+            
+            <div class="input-group">
+              <label for="loan-term">
+                <span class="input-label">Plazo</span>
+                <span class="input-value" id="term-display">12 meses</span>
+              </label>
+              <input type="range" id="loan-term" min="3" max="48" step="1" value="12" aria-describedby="term-display">
+            </div>
+            
+            <div class="input-group">
+              <label for="interest-rate">
+                <span class="input-label">Tasa de interés anual</span>
+                <span class="input-value" id="rate-display">2,5%</span>
+              </label>
+              <input type="range" id="interest-rate" min="0.5" max="10" step="0.1" value="2.5" aria-describedby="rate-display">
+            </div>
+          </div>
+          
+          <div class="calculator-results">
+            <div class="result-card result-card--primary">
+              <div class="result-label">Cuota mensual</div>
+              <div class="result-value" id="monthly-payment">$87.500</div>
+            </div>
+            
+            <div class="result-card">
+              <div class="result-label">Total a pagar</div>
+              <div class="result-value" id="total-payment">$1.050.000</div>
+            </div>
+            
+            <div class="result-card">
+              <div class="result-label">Total intereses</div>
+              <div class="result-value" id="total-interest">$50.000</div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="section" aria-labelledby="ofertas-heading">
+            <section class="section" aria-labelledby="ofertas-heading">
         <h2 id="ofertas-heading">Ofertas destacadas</h2>
         <div class="offers-list offers-grid offers-grid--2col">
           <!-- CREZU -->
@@ -138,6 +196,77 @@
   </footer>
 <script>
 (function(){var t=document.querySelector('.nav-toggle'),n=document.querySelector('.site-nav'),o=document.body;if(!t||!n)return;t.addEventListener('click',function(){var e=n.classList.toggle('nav-open');t.classList.toggle('active');t.setAttribute('aria-expanded',e);t.setAttribute('aria-label',e?'Cerrar menú':'Abrir menú');o.style.overflow=e?'hidden':''});n.querySelectorAll('.nav__link').forEach(function(e){e.addEventListener('click',function(){n.classList.remove('nav-open');t.classList.remove('active');t.setAttribute('aria-expanded','false');o.style.overflow=''})});n.addEventListener('click',function(e){if(e.target===n){n.classList.remove('nav-open');t.classList.remove('active');t.setAttribute('aria-expanded','false');o.style.overflow=''}})})();
+
+// Calculator
+(function() {
+  const amountInput = document.getElementById('loan-amount');
+  const termInput = document.getElementById('loan-term');
+  const rateInput = document.getElementById('interest-rate');
+  
+  const amountDisplay = document.getElementById('amount-display');
+  const termDisplay = document.getElementById('term-display');
+  const rateDisplay = document.getElementById('rate-display');
+  
+  const monthlyPaymentDisplay = document.getElementById('monthly-payment');
+  const totalPaymentDisplay = document.getElementById('total-payment');
+  const totalInterestDisplay = document.getElementById('total-interest');
+  
+  if (!amountInput || !termInput || !rateInput) return;
+  
+  function formatCurrency(amount) {
+    return '$' + Math.round(amount).toLocaleString('es-CO');
+  }
+  
+  function calculateLoan() {
+    const principal = parseFloat(amountInput.value);
+    const months = parseInt(termInput.value);
+    const annualRate = parseFloat(rateInput.value);
+    const monthlyRate = annualRate / 100 / 12;
+    
+    amountDisplay.textContent = formatCurrency(principal);
+    termDisplay.textContent = months + ' meses';
+    rateDisplay.textContent = annualRate.toFixed(1) + '%';
+    
+    let monthlyPayment, totalPayment, totalInterest;
+    
+    if (monthlyRate === 0) {
+      monthlyPayment = principal / months;
+      totalPayment = principal;
+      totalInterest = 0;
+    } else {
+      monthlyPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+      totalPayment = monthlyPayment * months;
+      totalInterest = totalPayment - principal;
+    }
+    
+    monthlyPaymentDisplay.textContent = formatCurrency(monthlyPayment);
+    totalPaymentDisplay.textContent = formatCurrency(totalPayment);
+    totalInterestDisplay.textContent = formatCurrency(totalInterest);
+  }
+  
+  amountInput.addEventListener('input', calculateLoan);
+  termInput.addEventListener('input', calculateLoan);
+  rateInput.addEventListener('input', calculateLoan);
+  
+  calculateLoan();
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Inicio",
+    "item": "https://creditocolombia.co/"
+  }, {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Ofertas de Créditos",
+    "item": "https://creditocolombia.co/ofertas-creditos.html"
+  }]
+}
 </script>
 </body>
 </html>
