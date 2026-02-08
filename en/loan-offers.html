@@ -25,6 +25,34 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #1b262c;
+      margin-top: 0.5rem;
+    }
+    .offer-card--featured {
+      border: 2px solid #3282b8;
+      box-shadow: 0 4px 12px rgba(50, 130, 184, 0.15);
+    }
+    .offer-badge {
+      display: inline-block;
+      background: #3282b8;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+    .cta-microcopy {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -51,8 +79,8 @@
   <main id="main-content" class="site-main">
     <div class="container">
       <header class="page__header">
-        <h1>Online Loan Offers Comparison</h1>
-        <p>Find and compare the best online loan offers in Colombia. All listed entities are legal and verified. Check amounts, rates, requirements, and approval times in one place.</p>
+        <h1>Apply for Your Online Loan Today — Approval in 15 Minutes</h1>
+        <p class="hero-subtitle">Compare verified offers and receive up to $3,000,000 in 24 hours. No banks, no paperwork, 100% online.</p>
       </header>
       <section class="section" aria-labelledby="como-funciona-heading">
         <h2 id="como-funciona-heading">How does this comparison tool work?</h2>
@@ -112,8 +140,68 @@
           </div>
         </div>
       </section>
-            <section class="section" aria-labelledby="ofertas-heading">
-        <h2 id="ofertas-heading">Featured offers</h2>
+
+      <section class="section" aria-labelledby="featured-heading">
+        <h2 id="featured-heading">🏆 Recommended Offers</h2>
+        <div class="offers-list offers-grid offers-grid--2col">
+          <!-- CREZU -->
+          <article class="offer-card offer-card--featured">
+            <div class="offer-card__header">
+              <img src="../crezu.png" alt="CREZU Logo" class="offer-card__logo">
+              <span class="offer-card__title">CREZU</span>
+              <span class="offer-badge">0% first loan</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Amount:</strong> $100.000 – $3.000.000 COP</li>
+              <li><strong>Rate from:</strong> First loan free / individual</li>
+              <li><strong>Approval:</strong> 15 minutes</li>
+              <li><strong>Requirements:</strong> Age 18–70, easy application</li>
+              <li><strong>Term:</strong> 90–120 days</li>
+            </ul>
+            <a href="https://go.goodaff.eu/crezu.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">View 0% offer →</a>
+            <small class="cta-microcopy">No cost · Answer in minutes</small>
+          </article>
+          <!-- SOSCREDIT -->
+          <article class="offer-card offer-card--featured">
+            <div class="offer-card__header">
+              <img src="../soscredit.png" alt="SOSCREDIT Logo" class="offer-card__logo">
+              <span class="offer-card__title">SOSCREDIT</span>
+              <span class="offer-badge">0% · Fast approval</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Amount:</strong> $100.000 – $3.000.000 COP</li>
+              <li><strong>Rate from:</strong> First loan 0%</li>
+              <li><strong>Approval:</strong> 15 minutes</li>
+              <li><strong>Requirements:</strong> Age 18–70</li>
+              <li><strong>Term:</strong> 62–2160 days</li>
+            </ul>
+            <a href="https://go.goodaff.eu/soscredit.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">View 0% offer →</a>
+            <small class="cta-microcopy">No cost · Answer in minutes</small>
+          </article>
+          <!-- CREDITO365 -->
+          <article class="offer-card offer-card--featured">
+            <div class="offer-card__header">
+              <img src="../credito365.png" alt="Crédito365 Logo" class="offer-card__logo">
+              <span class="offer-card__title">Crédito365</span>
+              <span class="offer-badge">10 min</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Amount:</strong> $100.000 – $1.500.000 COP</li>
+              <li><strong>Rate from:</strong> Individual</li>
+              <li><strong>Approval:</strong> 10 minutes</li>
+              <li><strong>Requirements:</strong> Age 18–70</li>
+              <li><strong>Term:</strong> 7–30 days</li>
+            </ul>
+            <a href="https://go.goodaff.eu/credito365.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Apply now (10 min) →</a>
+            <small class="cta-microcopy">No cost · Answer in minutes</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ofertas-heading">
+        <h2 id="ofertas-heading">All available offers</h2>
+        
+        <h3 id="first-loan">First Loan 0%</h3>
         <div class="offers-list offers-grid offers-grid--2col">
           <!-- CREZU -->
           <article class="offer-card">
@@ -145,21 +233,10 @@
             </ul>
             <a href="https://go.goodaff.eu/soscredit.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Apply</a>
           </article>
-          <!-- FINTERES -->
-          <article class="offer-card">
-            <div class="offer-card__header">
-              <img src="../finteres.png" alt="FINTERES Logo" class="offer-card__logo">
-              <span class="offer-card__title">FINTERES</span>
-            </div>
-            <ul class="offer-card__list">
-              <li><strong>Amount:</strong> $100.000 – $3.000.000 COP</li>
-              <li><strong>Rate from:</strong> Individual</li>
-              <li><strong>Approval:</strong> 2 days</li>
-              <li><strong>Requirements:</strong> Age 21–70</li>
-              <li><strong>Term:</strong> 90–2160 days</li>
-            </ul>
-            <a href="https://go.goodaff.eu/finteres.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Apply</a>
-          </article>
+        </div>
+
+        <h3 id="urgent">Fast Approval (under 20 minutes)</h3>
+        <div class="offers-list offers-grid offers-grid--2col">
           <!-- CREDITO365 -->
           <article class="offer-card">
             <div class="offer-card__header">
@@ -220,6 +297,25 @@
             </ul>
             <a href="https://murtov.com/1jru" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Apply</a>
           </article>
+        </div>
+
+        <h3 id="retirees">Options for Retirees and Seniors</h3>
+        <div class="offers-list offers-grid offers-grid--2col">
+          <!-- FINTERES -->
+          <article class="offer-card">
+            <div class="offer-card__header">
+              <img src="../finteres.png" alt="FINTERES Logo" class="offer-card__logo">
+              <span class="offer-card__title">FINTERES</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Amount:</strong> $100.000 – $3.000.000 COP</li>
+              <li><strong>Rate from:</strong> Individual</li>
+              <li><strong>Approval:</strong> 2 days</li>
+              <li><strong>Requirements:</strong> Age 21–70</li>
+              <li><strong>Term:</strong> 90–2160 days</li>
+            </ul>
+            <a href="https://go.goodaff.eu/finteres.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Apply</a>
+          </article>
           <!-- RAYO -->
           <article class="offer-card">
             <div class="offer-card__header">
@@ -235,6 +331,10 @@
             </ul>
             <a href="https://murtov.com/qjru" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Apply</a>
           </article>
+        </div>
+
+        <h3>Other Options</h3>
+        <div class="offers-list offers-grid offers-grid--2col">
           <!-- ODIRU -->
           <article class="offer-card">
             <div class="offer-card__header">

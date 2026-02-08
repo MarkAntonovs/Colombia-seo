@@ -25,6 +25,34 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #1b262c;
+      margin-top: 0.5rem;
+    }
+    .offer-card--featured {
+      border: 2px solid #3282b8;
+      box-shadow: 0 4px 12px rgba(50, 130, 184, 0.15);
+    }
+    .offer-badge {
+      display: inline-block;
+      background: #3282b8;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+    .cta-microcopy {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -51,8 +79,8 @@
   <main id="main-content" class="site-main">
     <div class="container">
       <header class="page__header">
-        <h1>Comparador de Ofertas de Créditos Online</h1>
-        <p>Encuentra y compara las mejores ofertas de préstamos online en Colombia. Todas las entidades listadas son legales y verificadas. Consulta montos, tasas, requisitos y tiempos de aprobación en un solo lugar.</p>
+        <h1>Solicita Tu Crédito Online Hoy — Aprobación en 15 Minutos</h1>
+        <p class="hero-subtitle">Compara ofertas verificadas y recibe hasta $3.000.000 en 24 horas. Sin bancos, sin papeleo, 100% online.</p>
       </header>
       <section class="section" aria-labelledby="como-funciona-heading">
         <h2 id="como-funciona-heading">¿Cómo funciona este comparador?</h2>
@@ -112,8 +140,68 @@
           </div>
         </div>
       </section>
-            <section class="section" aria-labelledby="ofertas-heading">
-        <h2 id="ofertas-heading">Ofertas destacadas</h2>
+
+      <section class="section" aria-labelledby="featured-heading">
+        <h2 id="featured-heading">🏆 Ofertas Recomendadas</h2>
+        <div class="offers-list offers-grid offers-grid--2col">
+          <!-- CREZU -->
+          <article class="offer-card offer-card--featured">
+            <div class="offer-card__header">
+              <img src="crezu.png" alt="Logo CREZU" class="offer-card__logo">
+              <span class="offer-card__title">CREZU</span>
+              <span class="offer-badge">0% primer préstamo</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Monto:</strong> $100.000 – $3.000.000 COP</li>
+              <li><strong>Tasa desde:</strong> Primer préstamo gratis / individual</li>
+              <li><strong>Aprobación:</strong> 15 minutos</li>
+              <li><strong>Requisitos:</strong> Edad 18–70, aplicación fácil</li>
+              <li><strong>Plazo:</strong> 90–120 días</li>
+            </ul>
+            <a href="https://go.goodaff.eu/crezu.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Ver oferta 0% →</a>
+            <small class="cta-microcopy">Sin costo · Respuesta en minutos</small>
+          </article>
+          <!-- SOSCREDIT -->
+          <article class="offer-card offer-card--featured">
+            <div class="offer-card__header">
+              <img src="soscredit.png" alt="Logo SOSCREDIT" class="offer-card__logo">
+              <span class="offer-card__title">SOSCREDIT</span>
+              <span class="offer-badge">0% · Aprobación rápida</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Monto:</strong> $100.000 – $3.000.000 COP</li>
+              <li><strong>Tasa desde:</strong> Primer préstamo 0%</li>
+              <li><strong>Aprobación:</strong> 15 minutos</li>
+              <li><strong>Requisitos:</strong> Edad 18–70</li>
+              <li><strong>Plazo:</strong> 62–2160 días</li>
+            </ul>
+            <a href="https://go.goodaff.eu/soscredit.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Ver oferta 0% →</a>
+            <small class="cta-microcopy">Sin costo · Respuesta en minutos</small>
+          </article>
+          <!-- CREDITO365 -->
+          <article class="offer-card offer-card--featured">
+            <div class="offer-card__header">
+              <img src="credito365.png" alt="Logo Crédito365" class="offer-card__logo">
+              <span class="offer-card__title">Crédito365</span>
+              <span class="offer-badge">10 min</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Monto:</strong> $100.000 – $1.500.000 COP</li>
+              <li><strong>Tasa desde:</strong> Individual</li>
+              <li><strong>Aprobación:</strong> 10 minutos</li>
+              <li><strong>Requisitos:</strong> Edad 18–70</li>
+              <li><strong>Plazo:</strong> 7–30 días</li>
+            </ul>
+            <a href="https://go.goodaff.eu/credito365.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Solicitar ahora (10 min) →</a>
+            <small class="cta-microcopy">Sin costo · Respuesta en minutos</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ofertas-heading">
+        <h2 id="ofertas-heading">Todas las ofertas disponibles</h2>
+        
+        <h3 id="primer-credito">Primer Crédito 0%</h3>
         <div class="offers-list offers-grid offers-grid--2col">
           <!-- CREZU -->
           <article class="offer-card">
@@ -145,21 +233,10 @@
             </ul>
             <a href="https://go.goodaff.eu/soscredit.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Solicitar</a>
           </article>
-          <!-- FINTERES -->
-          <article class="offer-card">
-            <div class="offer-card__header">
-              <img src="finteres.png" alt="Logo FINTERES" class="offer-card__logo">
-              <span class="offer-card__title">FINTERES</span>
-            </div>
-            <ul class="offer-card__list">
-              <li><strong>Monto:</strong> $100.000 – $3.000.000 COP</li>
-              <li><strong>Tasa desde:</strong> Individual</li>
-              <li><strong>Aprobación:</strong> 2 días</li>
-              <li><strong>Requisitos:</strong> Edad 21–70</li>
-              <li><strong>Plazo:</strong> 90–2160 días</li>
-            </ul>
-            <a href="https://go.goodaff.eu/finteres.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Solicitar</a>
-          </article>
+        </div>
+
+        <h3 id="urgente">Aprobación Rápida (menos de 20 minutos)</h3>
+        <div class="offers-list offers-grid offers-grid--2col">
           <!-- CREDITO365 -->
           <article class="offer-card">
             <div class="offer-card__header">
@@ -219,6 +296,25 @@
               <li><strong>Plazo:</strong> 7–30 días</li>
             </ul>
             <a href="https://murtov.com/1jru" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Solicitar</a>
+          </article>
+        </div>
+
+        <h3 id="pensionados">Opciones para Pensionados y Mayores</h3>
+        <div class="offers-list offers-grid offers-grid--2col">
+          <!-- FINTERES -->
+          <article class="offer-card">
+            <div class="offer-card__header">
+              <img src="finteres.png" alt="Logo FINTERES" class="offer-card__logo">
+              <span class="offer-card__title">FINTERES</span>
+            </div>
+            <ul class="offer-card__list">
+              <li><strong>Monto:</strong> $100.000 – $3.000.000 COP</li>
+              <li><strong>Tasa desde:</strong> Individual</li>
+              <li><strong>Aprobación:</strong> 2 días</li>
+              <li><strong>Requisitos:</strong> Edad 21–70</li>
+              <li><strong>Plazo:</strong> 90–2160 días</li>
+            </ul>
+            <a href="https://go.goodaff.eu/finteres.co/9js4591jn" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Solicitar</a>
           </article>
           <!-- RAYO -->
           <article class="offer-card">
@@ -295,6 +391,10 @@
             </ul>
             <a href="https://murtov.com/Bjru" class="nav__link offer-card__button" rel="nofollow noopener" target="_blank">Solicitar</a>
           </article>
+        </div>
+
+        <h3>Otras Opciones</h3>
+        <div class="offers-list offers-grid offers-grid--2col">
         </div>
         <p class="offers-grid__note">* Las condiciones pueden variar según perfil y entidad. Antes de solicitar, revisa los términos y condiciones de cada oferta. El sitio no es entidad financiera ni otorga créditos directamente.</p>
       </section>
