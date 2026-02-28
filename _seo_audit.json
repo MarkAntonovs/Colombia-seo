@@ -1,0 +1,65 @@
+{
+  "issues": [
+    [
+      "404.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "contacto.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "en/404.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "en/contact.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "en/index.html",
+      "canonical_mismatch",
+      "found=https://creditocolombia.co/en/ expected=https://creditocolombia.co/en/index.html"
+    ],
+    [
+      "en/privacy-policy.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "en/terms.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "index.html",
+      "canonical_mismatch",
+      "found=https://creditocolombia.co/ expected=https://creditocolombia.co/index.html"
+    ],
+    [
+      "politica-privacidad.html",
+      "has_noindex",
+      "noindex, follow"
+    ],
+    [
+      "template-cluster-page.html",
+      "has_noindex",
+      "noindex, nofollow"
+    ],
+    [
+      "template-cluster-page.html",
+      "canonical_mismatch",
+      "found=https://creditocolombia.co/SLUG expected=https://creditocolombia.co/template-cluster-page.html"
+    ],
+    [
+      "terminos.html",
+      "has_noindex",
+      "noindex, follow"
+    ]
+  ],
+  "broken_links": []
+}
